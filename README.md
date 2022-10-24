@@ -15,6 +15,8 @@ SELECT * FROM orders WHERE `status` IN ('cancelled', 'returned')
 
 SELECT * FROM orders WHERE `status` = 'cancelled' AND `sum` BETWEEN 3000 AND 10000
 SELECT * FROM orders WHERE `status` = 'cancelled' AND `sum` NOT BETWEEN 3000 AND 10000
+
+SELECT title, amount, amount * 1.65 AS pack FROM book; --можно делать арифм дейсвтия со столбцами
 ```
 
 ### сортировка
